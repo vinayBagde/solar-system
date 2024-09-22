@@ -1,0 +1,94 @@
+body {
+  background-image: url(../image/tim-bernhard-koglIkZ8jBI-unsplash.jpg);
+  background-size: cover;
+}
+
+#earth {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  position: relative;
+  left: 50%;
+  bottom: 10px;
+  border-radius: 50%;
+}
+
+#sun {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+}
+
+#loader {
+  width: 200px;
+  height: 200px;
+
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 50%;
+  animation: loader 5s linear 0.1s infinite reverse;
+}
+
+#innerLoader {
+  width: 100px;
+  height: 100px;
+
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 50%;
+  animation: inner 4s linear 0.1s infinite normal;
+}
+
+#loader-a {
+  width: 300px;
+  height: 300px;
+
+  margin: auto;
+  margin-top: 3%;
+
+  border-radius: 50%;
+  animation: inner 8s linear 0.1s infinite normal;
+}
+
+#loader-b {
+  width: 400px;
+  height: 400px;
+
+  margin: auto;
+  margin-top: 2%;
+
+  border-radius: 50%;
+  animation: inner 10s linear 0.1s infinite reverse;
+}
+
+#loader-c {
+  width: 500px;
+  height: 500px;
+
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 50%;
+  animation: inner 20s linear 0.1s infinite normal;
+}
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes inner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
